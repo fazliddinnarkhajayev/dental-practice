@@ -1,0 +1,141 @@
+.point__container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  transform: translateY(-75px);
+}
+.point__treatment-box{
+  width: 300px;
+  padding: 39px 37px 56px;
+  background-color: #FFD600;
+  border-radius: 5px;
+  &::before{
+    content: "";
+    display: block;
+    margin-bottom: 19px;
+    width: 100%;
+    height: 86px;
+    background-image: url("../img/treat.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.point__prosthetics-box{
+background-color: #FFE040;
+padding: 39px 37px 31px;
+
+&::before{
+  background-image: url("../img/teeth.png");
+}
+}
+.point__treat-title{
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+  margin: 0;
+  margin-bottom: 4px;
+
+}
+.point__treat-text{
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #272727;
+  margin: 0;
+}
+
+.point__form{
+  background-color: #0055B8;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 34px 18px 33px;
+  width: 540px;
+  border-radius: 5px;
+}
+.point__form-title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 27px;
+}
+.point__input{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #FFFFFF;
+  padding: 21px 15px;
+  width: 100%;
+  outline: transparent;
+  margin-bottom: 12px;
+
+  &:focus{
+    background-color: #fff;
+    border: 1px solid #0055B8;
+  }
+}
+.point__button{
+ padding: 17px 63px;
+ width: 230px;
+ white-space: nowrap;
+ background-color: #FFD600;
+ border: none;
+ border-radius: 5px;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 18px;
+ line-height: 21px;
+ color: #272727;
+
+ &:hover{
+   opacity:0.8;
+ }
+ &:active{
+   opacity:0.6;
+ }
+}
+.point__inner{
+  display: flex;
+  align-items: center;
+}
+.point__text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  max-width: 256px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 22px;
+}
+.point__label{
+  position: relative;
+
+  &::before{
+  position: absolute;
+  left: 180px;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+}
+ .point__checkbox:checked ~ .point__label::before{
+  background-image: url("../img/ticket.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}

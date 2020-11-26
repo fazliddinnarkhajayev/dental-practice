@@ -1,0 +1,125 @@
+.site-header{
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 12px;
+  padding-bottom: 50px;
+}
+
+.site-header__top-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.site-header__contact-box{
+  position: relative;
+  padding-left: 37px;
+}
+.site-header__contact-box::before{
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.site-header__contact-page{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+  margin: 0;
+  margin-bottom: 3px;
+
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+.site-header__contact-link{
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: baseline;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+.site-header__logo-link{
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 368px;
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
+.site-header__logo-img{
+  display: block;
+}
+
+.site-header__time-box{
+position: relative;
+padding-left: 37px;
+margin-left: 323px;
+}
+.site-header__time-box::before{
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.site-header__time-open{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00B007;
+  margin: 0;
+  margin-bottom: 3px;
+}
+.site-header__time-period{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+  margin: 0;
+}
+.site-header__bottom-box{
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #0055B8;
+  padding: 20px 41px 20px 30px;
+  border-radius: 5px;
+  justify-content: space-between;
+  width: 1140px;
+}

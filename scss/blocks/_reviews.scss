@@ -1,0 +1,117 @@
+
+.reviews{
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+.reviews__container{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.reviews__title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #272727;
+  margin: 0;
+  margin-bottom: 12px;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+   width: 50px;
+   height: 3px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 24px;
+   background-color:#FFD600;
+   }
+
+   &::after{
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translateX(-52%);
+     content: "";
+     width: 275px;
+     height: 152px;
+     background-image: url("../img/logo-before.svg");
+     background-repeat: no-repeat;
+     background-position: center center;
+   }
+}
+.reviews__text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4D4D4D;
+  max-width: 483px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews__list{
+margin: 0;
+padding: 0;
+margin-top: 35px;
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+}
+.reviews__item-inner{
+ max-width: 362px;
+}
+.reviews__item:not(:first-child){
+  margin-left: 32px;
+}
+.reviews__item-img{
+  display: inline-block;
+  vertical-align: baseline;
+}
+.reviews__item-title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 31px;
+  margin-bottom: 13px;
+}
+.reviews__item-text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4D4D4D;
+  margin: 0;
+}
+.reviews__link{
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4D4D4D;
+  padding: 25px 76px;
+  border: 2px solid #0055B8;
+  border-radius: 5px;
+  margin-top: 49px;
+  width: 265px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover{
+    background-color: #0055B8;
+    color: white;
+  }
+  &:active{
+    opacity:0.6;
+  }
+
+}

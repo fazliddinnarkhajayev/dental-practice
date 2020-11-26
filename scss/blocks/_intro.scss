@@ -1,0 +1,90 @@
+
+.intro__list{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.intro__img{
+  display: block;
+  max-width: 1920px;
+  height:900px;
+}
+.intro__box-container{
+  position: relative;
+}
+.intro__box{
+  position:absolute;
+  top: -600px;
+}
+.intro__button-container{
+  position: relative;
+}
+.intro__button{
+ width: 70px;
+ height: 70px;
+ border: none;
+ border-radius: 5px;
+ background-color: #FFD600;
+ background-image: url("../img/Arrow2.svg");
+ background-repeat: no-repeat;
+ background-position: center center;
+ position: absolute;
+ bottom: -746px;
+ left: 70px;
+
+ &:hover{
+  opacity: 0.8;
+}
+&:active{
+  opacity: 0.6;
+}
+}
+.intro__button--left{
+ width: 42px;
+ left: 20px;
+ background-image: url("../img/Arrow1.svg");
+
+}
+.intro__title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.intro__text{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #272727;
+  width: 543px;
+  margin: 0;
+  margin-bottom: 27px;
+}
+.intro__link{
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 25px 115px;
+  color: white;
+  background-color: #0055B8;
+  border-radius: 5px;
+
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.6;
+  }
+}
