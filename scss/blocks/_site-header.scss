@@ -14,19 +14,23 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.site-header__contact-box{
+.site-header__contact-link{
   position: relative;
   padding-left: 37px;
-}
-.site-header__contact-box::before{
-  position: absolute;
-  left: 0;
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/phone.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: baseline;
+
+  &::before{
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 .site-header__contact-page{
   font-style: normal;
@@ -44,15 +48,13 @@
     opacity: 0.6;
   }
 }
-.site-header__contact-link{
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: baseline;
+.site-header__contact-tel{
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   color: #272727;
+  margin: 0;
 
   &:hover{
     opacity: 0.8;
@@ -122,4 +124,103 @@ margin-left: 323px;
   border-radius: 5px;
   justify-content: space-between;
   width: 1140px;
+}
+.site-header__nav-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.site-header__bottom-box-logo{
+  display: none;
+}
+.site-header__bottom-box-button{
+  padding:18px 16px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/gamburger.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  display: none;
+}
+
+
+@include retina-bg {
+  .site-header__bottom-box-button{
+   background-image: url("../img/gamburger@2x.png");
+}
+}
+
+@media only screen and (max-width:1179px){
+  .site-header__top-box{
+    display: none;
+  }
+  .site-header__bottom-box{
+    position: relative;
+    max-width: 1024px;
+  }
+  .site-header{
+    position: relative;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+ padding: 0;
+  }
+  body{
+    margin-top: 0;
+  }
+  .site-header__bottom-box-logo{
+    display: block;
+  }
+  .site-header__nav-wrapper{
+    max-width: 701px;
+  }
+
+
+}
+
+@media only screen and (max-width:1018px){
+ .site-header__nav-wrapper{
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   flex-direction: column;
+   background-color: #0055B8;
+   width: 100%;
+   display: none;
+ }
+ .site-header--open .site-header__nav-wrapper{
+   display: block;
+ }
+ .site-header__bottom-box{
+   max-width: 375px;
+   position: relative;
+   border-radius:0 ;
+   padding: 23px 18px 24px 20px;
+ }
+ .site-header__bottom-box-button{
+  display: block;
+}
+
+.site-header--no-js .site-header__bottom-box-button{
+  display: none;
+}
+.site-header--no-js .site-header__bottom-box{
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.site-header--no-js .site-header__nav-wrapper{
+   position: relative;
+   display: block;
+}
+.site-header--no-js .site-header__bottom-box-logo{
+  margin-bottom: 20px;
+}
+
 }

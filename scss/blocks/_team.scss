@@ -58,8 +58,9 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 844px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team__item:not(:first-child){
 margin-left: 52px;
@@ -77,4 +78,35 @@ margin-left: 52px;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+}
+.team__img{
+  width: 300px;
+}
+
+@media only screen and (max-width:1179px){
+  .team__img{
+    width: 252px;
+  }
+}
+
+@media only screen and (max-width:1018px){
+  .team__text{
+    max-width:301px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team__list{
+    max-width:301px;
+    overflow-x: hidden;
+  }
+  .team__item--mobil{
+    display: none;
+  }
+  .team__img{
+    min-width: 252px;
+  }
+  .team__container{
+    max-width: 375px;
+    padding: 0;
+  }
 }

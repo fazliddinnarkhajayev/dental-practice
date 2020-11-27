@@ -58,3 +58,42 @@ align-items: center;
   display: inline-block;
   vertical-align: middle;
 }
+
+
+@media only screen and (max-width:1018px){
+  .site-nav{
+    width: 100%;
+  }
+  .site-nav__list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .site-nav__item:not(:first-child){
+    margin-left: 0;
+  }
+  .site-nav__item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .site-nav__link{
+    border: 1px solid #FFD600;
+    color:#FFD600 ;
+    width: 100%;
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 13px;
+
+    &:hover{
+      background-color: #FFD600;
+      color: #0055B8;
+    }
+   }
+   .site-nav__social-list{
+   padding-top: 63px;
+   padding-bottom: 26px;
+   justify-content: center;
+  }
+ }

@@ -139,3 +139,48 @@ padding: 39px 37px 31px;
   background-position: center center;
   background-size: auto;
 }
+
+@include retina-bg{
+  .point__prosthetics-box::before{
+      background-image: url("../img/teeth@2x.png");
+  }
+  .point__treatment-box{
+          background-image: url("../img/treat@2x.png");
+  }
+}
+
+@media only screen and (max-width:1179px){
+  .point__treatment-box{
+    max-width: 269px;
+  }
+  .point__form{
+    max-width: 480px;
+  }
+  .point__label::before{
+    left: 130px;
+  }
+  .point__container{
+    max-width: 1024px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width:1018px){
+  .point__treatment-box{
+   display: none;
+  }
+  .point__form{
+    max-width: 375px;
+  }
+  .point__container{
+  transform: translateY(0);
+  justify-content: center;
+}
+.point__button{
+  width: 100%;
+}
+.point__label::before{
+  left: 30px;
+  bottom:-30px;
+}
+}

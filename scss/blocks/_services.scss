@@ -54,16 +54,25 @@
   color: #272727;
   margin: 0;
   position: relative;
-
   &::before{
+    content: "";
+    display: block;
+   width: 50px;
+   height: 3px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 24px;
+   background-color:#FFD600;
+   }
+  &::after{
     position: absolute;
     left: 50%;
     transform: translateX(-53%);
-    top: -25px;
+    top: -4px;
     content: "";
     width: 275px;
     height: 152px;
-    background-image: url("../../img/logo-before.svg");
+    background-image: url("../img/logo-before.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 275px 110px;
@@ -180,4 +189,48 @@
   text-transform: uppercase;
   margin: 0;
   flex-grow: 1;
+ }
+
+ @include retina-bg{
+  .services__link{
+    &::before{
+      background-image: url("../img/isqGaoU82@2x.png");
+    }
+    &--hyg::before{
+      background-image: url("../img/FP42pk3g2@2x.png");
+    }
+    &--diag::before{
+      background-image: url("../img/XhlP1WnU2@2x.png");
+    }
+    &--child::before{
+      background-image: url("../img/38XPQpqM2@2x.png");
+    }
+   }
+ }
+
+ @media only screen and (max-width:1179px){
+ .services__item--dentist{
+   display: none;
+ }
+ .services__list{
+   max-width: 768px;
+ }
+ }
+
+ @media only screen and (max-width:1018px){
+ .services__box{
+   margin-top: 96px;
+ }
+  .services__text{
+   max-width: 289px;
+  }
+  .services__list{
+    max-width: 301px;
+  }
+  .services__item--mobil{
+    display: none;
+  }
+  .services__button{
+    display: none;
+  }
  }
